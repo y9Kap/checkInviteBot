@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MainKt" type="JetRunConfigurationType" nameIsGenerated="true">
+    <envs>
+      <env name="BOT_TOKEN" value="7507051373:AAHwI5exfnibEjVLiZmSUZaYWdJlhzebH-I" />
+      <env name="ADMIN_CHAT_ID" value="598669810" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="org.example.MainKt" />
+    <module name="checkInviteBot.main" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
