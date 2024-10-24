@@ -6,7 +6,6 @@ import dev.inmo.tgbotapi.extensions.api.send.*
 import dev.inmo.tgbotapi.extensions.behaviour_builder.*
 import dev.inmo.tgbotapi.extensions.behaviour_builder.triggers_handling.*
 import dev.inmo.tgbotapi.extensions.utils.*
-import dev.inmo.tgbotapi.extensions.utils.extensions.raw.from
 import dev.inmo.tgbotapi.extensions.utils.types.buttons.dataButton
 import dev.inmo.tgbotapi.types.ChatId
 import dev.inmo.tgbotapi.types.MessageId
@@ -29,12 +28,10 @@ suspend fun main() {
             }
         }
         onCommand("start") {
-            if (it.from?.id?.chatId?.long == adminChatIdLong) {
-                bot.sendMessage(
-                    chatId = it.chat.id,
-                    text = "Добро пожаловать в бот по отслеживанию запросов на вступление."
-                )
-            }
+            bot.sendMessage(
+                chatId = it.chat.id,
+                text = "Добро пожаловать в бот по отслеживанию запросов на вступление."
+            )
         }
         onChatJoinRequest {
             val member = it.user
