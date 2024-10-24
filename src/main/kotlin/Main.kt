@@ -16,7 +16,7 @@ import dev.inmo.tgbotapi.utils.row
 
 suspend fun main() {
     val token: String = System.getenv("BOT_TOKEN")
-    val adminChatIdLong = System.getenv("ADMIN_CHAT_ID").toLongOrNull() ?: "598669810".toLong()
+    val adminChatIdLong = System.getenv("ADMIN_CHAT_ID").toLong()
     val adminChatId = ChatId(RawChatId(adminChatIdLong))
     val bot = telegramBot(token)
 
